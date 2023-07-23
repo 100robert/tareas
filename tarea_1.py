@@ -6,5 +6,4 @@ for i in range(num):
     espon = contador + apoyo
     contador = apoyo
     apoyo = espon
-
-print(apoyo) 
+    print(apoyo)
