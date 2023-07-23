@@ -4,4 +4,4 @@ for elem in cadena:
     if elem == "a":
         contador += 1
 
-print("tiene ", contador, " letas a")       
+print("tiene ", contador, " letas a")    
