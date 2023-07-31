@@ -2,20 +2,23 @@
 mensaje_original = input("Ingrese el mensaje a cifrar: ")
 desplazamiento = 1
 
+alfabeto_mayusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+alfabeto_minusculas = 'abcdefghijklmnopqrstuvwxyz'
+
 mensaje_cifrado = ""
 for letra in mensaje_original:
-    # Verificar si la letra es una letra del alfabeto
-    if letra.isalpha():
-        # Obtener el código ASCII de la letra
-        codigo_ascii = ord(letra)
-        # Verificar si es una letra mayúscula o minúscula y calcular el desplazamiento en el alfabeto
-        if letra.isupper():
-            nueva_letra = chr((codigo_ascii - 65 + desplazamiento) % 26 + 65)
-        else:
-            nueva_letra = chr((codigo_ascii - 97 + desplazamiento) % 26 + 97)
-        mensaje_cifrado += nueva_letra
+    if letra.isupper():
+        indice_actual = alfabeto_mayusculas.index(letra)
+        nuevo_indice = (indice_actual + desplazamiento) % 26
+        nueva_letra = alfabeto_mayusculas[nuevo_indice]
+    elif letra.islower():
+        indice_actual = alfabeto_minusculas.index(letra)
+        nuevo_indice = (indice_actual + desplazamiento) % 26
+        nueva_letra = alfabeto_minusculas[nuevo_indice]
     else:
-        mensaje_cifrado += letra
+        nueva_letra = letra
+
+    mensaje_cifrado += nueva_letra
 
 # Mostrar el resultado
 print("Mensaje original:", mensaje_original)
