@@ -10,6 +10,7 @@ import random
 # c) Debe incluir al menos una letra mayúscula y una letra minúscula.
 # d) Debe contener al menos un número.
 # e) Debe contener al menos un carácter especial (por ejemplo, !, @, #, $, %, etc.)
+
 minus = 'abcdefjhijklmnñoprstuvwxyz'
 mayus = minus.upper()
 nume = '1234567890'
