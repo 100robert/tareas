@@ -1,4 +1,5 @@
 import random
+
 # 3) Ejercicio Complejo: Generador de Contraseñas Seguras
 # Descripción: Vamos a crear un generador de contraseñas seguras 
 # utilizando los conceptos que hemos aprendido hasta ahora, incluyendo funciones
@@ -14,7 +15,7 @@ import random
 minus = 'abcdefjhijklmnñoprstuvwxyz'
 mayus = minus.upper()
 nume = '1234567890'
-carac_esp = '!@#$%&'
+carac_esp = '!@#$%&/'
 longitud = 8
 totalcarac= minus+mayus+nume+carac_esp
 pasword = random.sample(totalcarac,longitud)
