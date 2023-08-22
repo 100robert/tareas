@@ -10,6 +10,7 @@ persona = {
 'zipcode': '02210'
 }
 }
+#a
 if 'skills' in persona:
     skill = persona['skills']
     if len(skill) >= 3:
@@ -19,7 +20,7 @@ if 'skills' in persona:
         print("No hay suficientes habilidades para determinar la habilidad del medio.")
 else:
     print("La persona no tiene la clave 'skills' en su diccionario.")
-
+#b
 if 'skills' in persona:
     skill = persona['skills']
     if 'Python' in skill:
@@ -28,7 +29,7 @@ if 'skills' in persona:
         print("La persona no tiene la habilidad 'Python'.")
 else:
     print("La persona no tiene la clave 'skills' en su diccionario.")
-
+#c
 if 'skills' in persona:
     skills = persona['skills']
     if 'JavaScript' in skills and 'React' in skills and len(skills) == 2:

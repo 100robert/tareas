@@ -8,6 +8,7 @@ total_lenguajes = len(NUm_leng)
 print("Número total de idiomas:", total_lenguajes)
 
 #b Encuentra los diez idiomas más hablados a partir de los datos.
+
 contar_idiomas = {}
 for country in countries:
     lenguajes = country['languages']
@@ -20,7 +21,9 @@ leng_mas_habl = sorted(contar_idiomas.items(), key=lambda x: x[1], reverse=True)
 print("Los 10 idiomas mas hablados apartir de los datos son")
 for lenguaje, count in leng_mas_habl:
     print(f"{lenguaje}: {count} paises")
+    
 #c) Encuentra los 10 países más poblados del mundo.
+
 paises_mas_poblados_mundo = sorted(countries, key=lambda x: x['population'], reverse=True)[:10]
 print("Los diez países más poblados:")
 for index, country in enumerate(paises_mas_poblados_mundo, start=1):
