@@ -8,11 +8,6 @@ total_lenguajes = len(NUm_leng)
 print("Número total de idiomas:", total_lenguajes)
 
 #b Encuentra los diez idiomas más hablados a partir de los datos.
-
-# top_languages = sorted(language_count.items(), key=lambda x: x[1], reverse=True)[:10]
-# print("Los diez idiomas más hablados:")
-# for language, count in top_languages:
-#     print(f"{language}: {count} países")
 contar_idiomas = {}
 for country in countries:
     lenguajes = country['languages']
